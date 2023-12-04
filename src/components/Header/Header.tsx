@@ -9,7 +9,7 @@ export default function Header() {
     <div className="container">
       <div className="Div1">
         <Link to="/">
-          <a style={{ display: "flex", alignItems: "center", color: "white" }}>
+          <a style={{ display: "flex", alignItems: "center", color: "white" ,marginBottom:'20'}}>
             <DiCssdeck size="3rem" /> <span>Portfolio</span>
           </a>
         </Link>
@@ -46,18 +46,3 @@ export default function Header() {
   );
 }
 
-//
-//     </Div2>
-// const Header = () =>  (
-//   <Container>
-//     <Div1>
-//       <Link href="/">
-//         <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
-//           <DiCssdeck size="3rem" /> <span>Portfolio</span>
-//         </a>
-//       </Link>
-//     </Div1>
-//
-
-//     </Container>
-// );

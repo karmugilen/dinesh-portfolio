@@ -3,6 +3,10 @@ sm (small): 576 pixels and up
 md (medium): 768 pixels and up
 lg (large): 992 pixels and up
 xl (extra-large): 1200 pixels and up */
+*{
+  text-decoration: none;
+  list-style: none;
+}
 .container{
   display: grid;
   grid-template-columns:repeat(5,1fr);
@@ -11,13 +15,45 @@ xl (extra-large): 1200 pixels and up */
   padding: 1rem;
   padding-top:2rem ;
 }
+
+
+
+.Div1{
+  grid-area: 1/1/2/2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.Div1 span{
+  font-size: 2rem;
+}
+.Div2{
+  grid-area: 2/2/3/5;
+  display: flex;
+  justify-content: space-around;
+}
 .Div3{
   grid-area: 1/5/2/6;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-@media screen and(max-width:576px) {
+/* Navigation */
+a .NavLink {
+  font-size: 2rem;
+  line-height: 32px;
+  color:rgba(255,255,255,0.75);
+  transition: 0.4s ease;
+
+}
+/* DropDown Contact */
+
+a .NavLink:hover{
+    color: #fff;
+    opacity: 1;
+    cursor: pointer;
+}
+@media screen and(max-width:640px) {
   .container{
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -32,58 +68,20 @@ xl (extra-large): 1200 pixels and up */
     grid-area:1/1/2/2;
 
   }
+  .Div2{
+    grid-area: 2/2/3/5;
+  }
   .Div3{
     align-items: center;
     grid-area: 1/4/2/6;
   }
+  a .NavLink{
+    padding: 0.5rem;
+  }
 
-}
-
-.Div1{
-  grid-area: 1/1/2/2;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.Div2{
-  grid-area: 2/2/3/5;
-  display: flex;
-  justify-content: space-around;
 }
 /* import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
-`;
-
-`;
-
-export const Div3 = styled.div`
-  grid-area: 1 / 5 / 2 / 6;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    align-items: center;
-    grid-area: 1 / 4 / 2 / 6;
-  }
-`;
-
-// Navigation Links
-export const NavLink = styled.a`
-  font-size: 2rem;
-  line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
-  transition: 0.4s ease;
-  &:hover {
-    color: #fff;
-    opacity: 1;
-    cursor: pointer;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
-  }
-`;
-
-/// DropDown Contact
 export const ContactDropDown = styled.button`
   border: none;
   display: flex;

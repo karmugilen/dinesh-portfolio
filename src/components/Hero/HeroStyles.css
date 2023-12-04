@@ -1,0 +1,22 @@
+.LeftSection{
+    width: 100%;
+    
+}
+ @media screen and (max-width:576px) {
+    .LeftSection{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+ }
+ @media screen and(max-width:768px) {
+    .LeftSection{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+ }
+
+
