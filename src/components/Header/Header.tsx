@@ -16,17 +16,17 @@ export default function Header() {
       </div>
       <div className="Div2">
         <li>
-          <Link to="#projects">
+          <Link to="/projects">
             <a className='NavLink'>Projects</a>
           </Link>
         </li>
         <li>
-          <Link to="#tech">
+          <Link to="/technologies">
             <a className="NavLink">Technologies</a>
           </Link>
         </li>
         <li>
-          <Link to="#about">
+          <Link to="/about">
             <a className="NavLink">About</a>
           </Link>
         </li>
