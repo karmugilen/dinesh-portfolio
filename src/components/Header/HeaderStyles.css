@@ -80,6 +80,14 @@ a .NavLink:hover{
   }
 
 }
+.SocialIcons {
+  transition: transform 0.3s ease;
+}
+
+.SocialIcons:hover {
+  transform: scale(1.2);
+  /* Add any other styling you want when hovered */
+}
 /* import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 export const ContactDropDown = styled.button`

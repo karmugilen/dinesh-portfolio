@@ -1,11 +1,13 @@
-import React from 'react'
+import './FooterStyles.css'
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer>
-        <small>
-      Copyright © 2023 Football History Archives. All Rights Reserved.
-       </small>
+      <small>
+        &copy; {new Date().getFullYear()} Football History Archives. All Rights Reserved.
+      </small>
     </footer>
-  )
-}
+  );
+};
+
+export default Footer;
