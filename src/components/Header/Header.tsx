@@ -32,7 +32,7 @@ export default function Header() {
         </li>
       </div>
        <div className="Div3">
-         <a className="SocialIcons" href="https://google.com">
+         <a className="SocialIcons" href="https://github.com/DineshSethu001">
            <AiFillGithub size="3rem" />
          </a>
          <a className="SocialIcons" href="https://google.com">

@@ -1,39 +1,46 @@
-/* Projects.css */
-
 .projects-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .projects-title {
-    font-size: 2.5rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 30px;
-    font-family: 'Arial', sans-serif; /* Change the font family as needed */
-  }
-  
-  .project-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .project-card h2 {
-    font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .project-card p {
-    font-size: 1.2rem;
-    color: #666;
-  }
-  
-  /* Add more styles as needed for additional project details */
-  
-  
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Adjust as needed for vertical spacing */
+}
+
+.project-card {
+  flex: 0 0 48%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.project-card h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1.2rem;
+  color: #666;
+}
